@@ -1,0 +1,21 @@
+{
+  "name": "study_group_finder",
+  "version": "1.0.0",
+  "description": "A mobile and web application to help students find and join study groups for collaborative learning.",
+  "scripts": {
+    "start": "node api/src/app.ts",
+    "build": "tsc",
+    "dev": "nodemon api/src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.4.4"
+  }
+}

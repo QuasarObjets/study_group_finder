@@ -1,0 +1,28 @@
+{
+  "name": "GroupFinder",
+  "version": "1.0.0",
+  "description": "Mobile app for helping students find and join study groups for collaborative learning",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.66.0",
+    // Add any additional dependencies here
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-native": "^0.66.0",
+    "jest": "^27.4.7",
+    "metro-react-native-babel-preset": "^0.66.0",
+    "react-native-typescript-transformer": "^1.5.0",
+    "typescript": "^4.4.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
