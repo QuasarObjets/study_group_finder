@@ -66,6 +66,6 @@ Agradecemos mucho tu contribución.
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia sobre este proyecto, por favor contáctanos en [correo electrónico de contacto] o visita nuestro sitio web [sitio web de contacto].
+Si tienes alguna pregunta o sugerencia sobre este proyecto, por favor contáctanos en [correo electrónico de contacto](mailto:help@byteguardian.tech) o visita nuestro sitio web [sitio web de contacto](https://byteguardian.tech).
 
 ¡Gracias por utilizar nuestra aplicación móvil y sitio web de estudio colaborativo!
