@@ -1,4 +1,4 @@
-# GroupFinder - App de Estudio Colaborativo - Aplicación Móvil
+# GroupFinder - App de Estudio Colaborativo - Aplicación Móvil y Sitio Web
 
 Este proyecto es una aplicación móvil y un sitio web diseñados para ayudar a los estudiantes a encontrar y unirse a grupos de estudio para el aprendizaje colaborativo.
 
