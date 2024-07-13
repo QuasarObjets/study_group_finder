@@ -1,0 +1,89 @@
+// File: mi-app-estudio/web/prisma/schema.prisma
+
+// Este archivo define el esquema de la base de datos utilizando Prisma.
+// Puedes encontrar más información en el archivo README.md dentro de la carpeta.
+
+// Ejemplo de definición de modelo de grupo de estudio
+model StudyGroup {
+  id        Int      @id @default(autoincrement())
+  name      String
+  subject   String
+  location  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Ejemplo de definición de modelo de usuario
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Ejemplo de definición de modelo de membresía de grupo de estudio
+model StudyGroupMembership {
+  id        Int      @id @default(autoincrement())
+  groupId   Int
+  userId    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaciones
+  group     StudyGroup @relation(fields: [groupId], references: [id])
+  user      User       @relation(fields: [userId], references: [id])
+}
+
+// Ejemplo de definición de modelo de solicitud de unión a grupo de estudio
+model StudyGroupJoinRequest {
+  id        Int      @id @default(autoincrement())
+  groupId   Int
+  userId    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaciones
+  group     StudyGroup @relation(fields: [groupId], references: [id])
+  user      User       @relation(fields: [userId], references: [id])
+}
+
+// Ejemplo de definición de modelo de mensaje en grupo de estudio
+model StudyGroupMessage {
+  id        Int      @id @default(autoincrement())
+  groupId   Int
+  userId    Int
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaciones
+  group     StudyGroup @relation(fields: [groupId], references: [id])
+  user      User       @relation(fields: [userId], references: [id])
+}
+
+// Ejemplo de definición de modelo de notificación
+model Notification {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  content   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaciones
+  user      User       @relation(fields: [userId], references: [id])
+}
+
+// Ejemplo de definición de modelo de configuración de usuario
+model UserSettings {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  darkMode  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaciones
+  user      User       @relation(fields: [userId], references: [id])
+}

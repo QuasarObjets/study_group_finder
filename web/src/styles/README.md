@@ -1,8 +1,4 @@
-# GroupFinder - App de Estudio Colaborativo - Aplicación Móvil
-
-Este proyecto es una aplicación móvil y un sitio web diseñados para ayudar a los estudiantes a encontrar y unirse a grupos de estudio para el aprendizaje colaborativo.
-
-## Estructura del proyecto
+# Estructura de archivos
 
 El proyecto tiene la siguiente estructura de archivos:
 
@@ -40,32 +36,4 @@ El proyecto tiene la siguiente estructura de archivos:
 
 - **web/README.md**: Este archivo contiene la documentación para el sitio web.
 
-## Instalación
-
-Para instalar y ejecutar la aplicación móvil y el sitio web, sigue los siguientes pasos:
-
-1. Clona este repositorio en tu máquina local.
-2. Navega a la carpeta "app-movil" y ejecuta el comando `npm install` para instalar las dependencias.
-3. Navega a la carpeta "web" y ejecuta el comando `npm install` para instalar las dependencias.
-4. Configura la base de datos PostgreSQL según las instrucciones en el archivo README.md dentro de la carpeta "web/prisma".
-5. Ejecuta el comando `npm run dev` en la carpeta "app-movil" para iniciar la aplicación móvil en modo de desarrollo.
-6. Ejecuta el comando `npm run dev` en la carpeta "web" para iniciar el sitio web en modo de desarrollo.
-
-¡Listo! Ahora puedes utilizar la aplicación móvil y el sitio web para encontrar y unirte a grupos de estudio.
-
-## Contribución
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-1. Haz un fork de este repositorio.
-2. Crea una rama con el nombre de tu nueva funcionalidad o corrección de errores.
-3. Realiza los cambios necesarios en tu rama.
-4. Envía un pull request a la rama principal de este repositorio.
-
-Agradecemos mucho tu contribución.
-
-## Contacto
-
-Si tienes alguna pregunta o sugerencia sobre este proyecto, por favor contáctanos en [correo electrónico de contacto] o visita nuestro sitio web [sitio web de contacto].
-
-¡Gracias por utilizar nuestra aplicación móvil y sitio web de estudio colaborativo!
+- **README.md**: Este archivo contiene la documentación general del proyecto.
